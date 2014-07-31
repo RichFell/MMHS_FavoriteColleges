@@ -122,5 +122,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         presentViewController(alert, animated: true, completion: nil)
     }
 
+    //prepareForSegue method for pushing data through the segue
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
+    {
+        let detailVC = segue.destinationViewController as DetailViewController
+        detailVC.college = colleges[tableView.indexPathForSelectedRow().row]
+    }
 }
 
