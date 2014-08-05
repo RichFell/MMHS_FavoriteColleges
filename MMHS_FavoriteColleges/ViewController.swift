@@ -22,10 +22,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
 
         //Using the CollegeObject's custom initializers to create four given Universities. Students can customize for their own top four favorites
-        let missouri = CollegeObject(name: "University of Missouri", location: "Columbia, MO", numberOfStudents: 34658, image: UIImage(named: "Missouri_Image"))
-        let illinois = CollegeObject(name: "University of Illinois", location: "Champaign, IL", numberOfStudents: 32281, image: UIImage(named: "Illinois_Image"))
-        let iowa = CollegeObject(name: "University of Iowa", location: "Iowa City, IA", numberOfStudents: 31065, image: UIImage(named: "Iowa_Image"))
-        let indiana = CollegeObject(name: "Indiana University", location: "Bloomington, IN", numberOfStudents: 110436, image: UIImage(named: "Indiana_Image"))
+        let missouri = CollegeObject(name: "University of Missouri", location: "Columbia, MO", numberOfStudents: 34658, image: UIImage(named: "Missouri_Image"), webAddress: "http://missouri.edu/")
+        let illinois = CollegeObject(name: "University of Dayton", location: "Dayton, OH", numberOfStudents: 10000, image: UIImage(named: "Dayton_Image"), webAddress: "http://www.udayton.edu/")
+        let iowa = CollegeObject(name: "University of Iowa", location: "Iowa City, IA", numberOfStudents: 31065, image: UIImage(named: "Iowa_Image"), webAddress: "www.IU.edu")
+        let indiana = CollegeObject(name: "Indiana University", location: "Bloomington, IN", numberOfStudents: 110436, image: UIImage(named: "Indiana_Image"), webAddress: "http://www.indiana.edu/")
 
         //Add the CollegeObjects into the Array so they can be used to populate the TableView
         colleges = [missouri, illinois, iowa, indiana]
@@ -102,6 +102,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         alert.addTextFieldWithConfigurationHandler({textfield in
             textfield.placeholder = "Add the College's location here"
             })
+        alert.addTextFieldWithConfigurationHandler({textfield in
+            textfield.placeholder = "Add the College's webAddress here"
+        })
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
         alert.addAction(cancelAction)
 
@@ -109,10 +112,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
             let nameTextfield = alert.textFields[0] as UITextField
             let locationTextfield = alert.textFields[1] as UITextField
+            let webAddressTextField = alert.textFields[2] as UITextField
 
-            let college = CollegeObject(name: nameTextfield.text, location: locationTextfield.text, numberOfStudents: 0, image: UIImage(named: "Default_Image"))
+            let college = CollegeObject(name: nameTextfield.text, location: locationTextfield.text, numberOfStudents: 0, image: UIImage(named: "Default_Image"), webAddress: webAddressTextField.text)
 
-            self.colleges += college
+            self.colleges += [college]
 
             self.tableView.reloadData()
             })

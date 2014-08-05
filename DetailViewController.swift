@@ -51,6 +51,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate
         numberOfStudentsLabel.hidden = true
     }
 
+    @IBAction func websiteButtonTapped(sender: UIButton)
+    {
+        
+    }
+
     func textFieldShouldReturn(textField: UITextField!) -> Bool
     {
         if textField == editLocationTextField

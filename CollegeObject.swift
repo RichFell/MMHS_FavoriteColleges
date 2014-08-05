@@ -14,13 +14,15 @@ class CollegeObject: NSObject
     var location : String = ""
     var numberOfStudents : Int = 0
     var image  = UIImage()
+    var urlString : String = ""
 
-    convenience init (name: String, location: String, numberOfStudents: Int, image: UIImage)
+    convenience init (name: String, location: String, numberOfStudents: Int, image: UIImage, webAddress: String)
     {
         self.init()
         self.name = name
         self.location = location
         self.numberOfStudents = numberOfStudents
         self.image = image
+        self.urlString = webAddress
     }
 }
