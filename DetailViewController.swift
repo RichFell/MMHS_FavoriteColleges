@@ -79,4 +79,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate
 
         return true
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
+    {
+        let webviewVC = segue.destinationViewController as WebViewController
+        webviewVC.college = college
+    }
 }

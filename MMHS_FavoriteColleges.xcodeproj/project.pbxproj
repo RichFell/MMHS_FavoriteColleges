@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93940F561991940B00813F74 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940F551991940B00813F74 /* WebViewController.swift */; };
 		9B1D2CBF198AB46D0000F22D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D2CBE198AB46D0000F22D /* DetailViewController.swift */; };
 		9BC5C35C197F161700350D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5C35B197F161700350D6E /* AppDelegate.swift */; };
 		9BC5C35F197F161700350D6E /* MMHS_FavoriteColleges.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5C35D197F161700350D6E /* MMHS_FavoriteColleges.xcdatamodeld */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93940F551991940B00813F74 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9B1D2CBE198AB46D0000F22D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		9BC5C356197F161700350D6E /* MMHS_FavoriteColleges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMHS_FavoriteColleges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC5C35A197F161700350D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				9BC5C35B197F161700350D6E /* AppDelegate.swift */,
 				9BC5C360197F161700350D6E /* ViewController.swift */,
 				9B1D2CBE198AB46D0000F22D /* DetailViewController.swift */,
+				93940F551991940B00813F74 /* WebViewController.swift */,
 				9BC5C37B197F16B500350D6E /* CollegeObject.swift */,
 				9BC5C362197F161700350D6E /* Main.storyboard */,
 				9BC5C365197F161700350D6E /* Images.xcassets */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC5C37C197F16B500350D6E /* CollegeObject.swift in Sources */,
+				93940F561991940B00813F74 /* WebViewController.swift in Sources */,
 				9BC5C361197F161700350D6E /* ViewController.swift in Sources */,
 				9B1D2CBF198AB46D0000F22D /* DetailViewController.swift in Sources */,
 				9BC5C35F197F161700350D6E /* MMHS_FavoriteColleges.xcdatamodeld in Sources */,
