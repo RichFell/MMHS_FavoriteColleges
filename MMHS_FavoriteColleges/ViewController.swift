@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //Using the CollegeObject's custom initializers to create four given Universities. Students can customize for their own top four favorites
         let missouri = CollegeObject(name: "University of Missouri", location: "Columbia, MO", numberOfStudents: 34658, image: UIImage(named: "Missouri_Image"), webAddress: "http://missouri.edu/")
         let illinois = CollegeObject(name: "University of Dayton", location: "Dayton, OH", numberOfStudents: 10000, image: UIImage(named: "Dayton_Image"), webAddress: "http://www.udayton.edu/")
-        let iowa = CollegeObject(name: "University of Iowa", location: "Iowa City, IA", numberOfStudents: 31065, image: UIImage(named: "Iowa_Image"), webAddress: "www.IU.edu")
+        let iowa = CollegeObject(name: "University of Iowa", location: "Iowa City, IA", numberOfStudents: 31065, image: UIImage(named: "Iowa_Image"), webAddress: "http://www.uiowa.edu")
         let indiana = CollegeObject(name: "Indiana University", location: "Bloomington, IN", numberOfStudents: 110436, image: UIImage(named: "Indiana_Image"), webAddress: "http://www.indiana.edu/")
 
         //Add the CollegeObjects into the Array so they can be used to populate the TableView

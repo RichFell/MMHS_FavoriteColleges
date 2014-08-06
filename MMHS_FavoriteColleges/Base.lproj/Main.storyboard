@@ -213,15 +213,6 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6G-ce-34G">
-                                <rect key="frame" x="16" y="39" width="57" height="30"/>
-                                <state key="normal" title="Dismiss">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onDismissButtonTapped:" destination="znl-GD-EgA" eventType="touchUpInside" id="Zgp-6s-eXW"/>
-                                </connections>
-                            </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bQq-ge-kFk">
                                 <rect key="frame" x="290" y="300" width="20" height="20"/>
                                 <constraints>
@@ -271,6 +262,21 @@
                                     <constraint firstAttribute="height" constant="60" id="sWh-Ys-5ZP"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6G-ce-34G">
+                                <rect key="frame" x="16" y="28" width="57" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5va-QZ-dgA"/>
+                                    <constraint firstAttribute="width" constant="57" id="Gp0-1X-dVh"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDismissButtonTapped:" destination="znl-GD-EgA" eventType="touchUpInside" id="Zgp-6s-eXW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -283,6 +289,8 @@
                             <constraint firstAttribute="centerX" secondItem="bQq-ge-kFk" secondAttribute="centerX" id="qLj-SE-jqc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dW0-pl-zHy" secondAttribute="trailing" constant="-16" id="tSS-0O-Tl9"/>
                             <constraint firstItem="dW0-pl-zHy" firstAttribute="leading" secondItem="UKd-sX-hML" secondAttribute="leadingMargin" constant="-16" id="uof-Jh-7hn"/>
+                            <constraint firstItem="K6G-ce-34G" firstAttribute="leading" secondItem="UKd-sX-hML" secondAttribute="leadingMargin" id="wdW-zw-BaP"/>
+                            <constraint firstItem="K6G-ce-34G" firstAttribute="top" secondItem="wBy-g8-E29" secondAttribute="bottom" constant="8" id="wdl-uQ-ow5"/>
                         </constraints>
                     </view>
                     <connections>
